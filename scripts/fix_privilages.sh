@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 chmod +x $PWD/*.sh
 chmod +x $PWD/*.jar
 
