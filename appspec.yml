@@ -13,7 +13,7 @@ permissions:
 
 hooks:
   BeforeInstall:
-    - location: fix_privileges.sh
+    - location: fix_privilages.sh
       timeout: 300
       runas: ubuntu
   AfterInstall:
