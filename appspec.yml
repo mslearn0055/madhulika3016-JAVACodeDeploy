@@ -13,18 +13,18 @@ permissions:
 
 hooks:
   BeforeInstall:
-    - location: server_clear.sh
+    - location: deployment-archive/server_clear.sh
       timeout: 300
       runas: ubuntu
   AfterInstall:
-    - location: fix_privileges.sh
+    - location: deployment-archive/fix_privileges.sh
       timeout: 300
       runas: ubuntu
   ApplicationStart:
-    - location: server_start.sh
+    - location: deployment-archive/server_start.sh
       timeout: 20
       runas: ubuntu
   ApplicationStop:
-    - location: server_stop.sh
+    - location: deployment-archive/server_stop.sh
       timeout: 20
       runas: ubuntu
