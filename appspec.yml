@@ -13,11 +13,11 @@ permissions:
 
 hooks:
   BeforeInstall:
-    - location: fix_privilages.sh
+    - location: server_clear.sh
       timeout: 300
       runas: ubuntu
   AfterInstall:
-    - location: server_clear.sh
+    - location: fix_privilages.sh
       timeout: 300
       runas: ubuntu
   ApplicationStart:
